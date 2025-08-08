@@ -3,44 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Basics & Box Model</title>
+    <title>Elegance | Fashion Boutique</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="site-header">
-        <h1>Welcome to My Styled Page</h1>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1 class="logo">ELEGANCE</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="content-area">
-        <section class="card">
-            <h2>Understanding the Box Model</h2>
-            <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
-            <button class="learn-more">Learn More</button>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Summer Collection 2023</h2>
+                <p>Discover our latest trends and styles</p>
+                <button class="shop-now">Shop Now</button>
+            </div>
         </section>
 
-        <section class="card highlighted">
-            <h2>CSS Basics</h2>
-            <p>CSS (Cascading Style Sheets) is used to style and layout web pages. You can control the color, font, spacing, and many other aspects of HTML elements.</p>
-            <button class="learn-more">Read Documentation</button>
+        <section class="featured-products">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #f9e3e3;"></div>
+                    <h3>Silk Summer Dress</h3>
+                    <p class="price">$89.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #e3e3f9;"></div>
+                    <h3>Linen Shirt</h3>
+                    <p class="price">$59.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image" style="background-color: #e3f9e3;"></div>
+                    <h3>Wide-leg Pants</h3>
+                    <p class="price">$79.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
         </section>
 
-        <section class="card">
-            <h2>Styling Text</h2>
-            <p>With CSS you can change the text color, font family, size, spacing between characters and lines, alignment, decoration, and many other typographic features.</p>
-            <button class="learn-more">Try It Out</button>
+        <section class="about-section">
+            <div class="about-content">
+                <h2 class="section-title">Our Story</h2>
+                <p>Founded in 2010, Elegance brings you high-quality fashion with timeless style. We believe in sustainable fashion that doesn't compromise on design.</p>
+                <p>All our products are ethically sourced and made to last beyond the season.</p>
+            </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>&copy; 2023 CSS Basics Assignment. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe for updates and promotions</p>
+                <input type="email" placeholder="Your email">
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Elegance Fashion Boutique. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
